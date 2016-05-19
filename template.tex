@@ -118,12 +118,12 @@ $endif$
 
 \vspace{25pt}
 
-\section*{Previous Experience}
+\section*{Publications}
 \noindent
-$for(experience)$
-\note{$experience.years$}\textsc{$experience.employer$}\\
-\emph{$experience.job$}\\
-$experience.city$\\[.2cm]
+$for(publications)$
+\note{$publications.years$}\textsc{$publications.title$}\\
+\emph{$publications.authors$}\\
+$publications.journal$, $publications.volume$ ($publications.issue$): $publications.pages$\\[.2cm]
 $endfor$
 
 $if(education)$
