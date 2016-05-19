@@ -1,50 +1,45 @@
 ---
 # Personal details
-name: Friedrich Nietzsche
+name: A. Andrew M. MacDonald
 address:
-- Humboldtstraße 36
-- 99425 Weimar
-- Prussia
-phone: "+49 03643 545400"
-email: friedrich@thevoid.de
+- 2404 Guelph Street
+- Vancouver, British Columbia
+- Canada
+phone: "+1 778 998 5002"
+email: a.a.m.macdonald@gmail.com
 # Insert URLs without http://
 urls:
-- wki.pe/friedrich_nietzsche
-- twitter.com/tinynietzsche
+- github.com/aammd
+- twitter.com/polesasunder
 
 # Sections
 
-intro: "I know my fate. One day my name will be associated with the memory of something tremendous --- a crisis without equal on earth, the most profound collision of conscience, a decision that was conjured up against everything that had been believed, demanded, hallowed so far. I am no man, I am dynamite."
+intro: “I am passionate about community ecology, data analysis, and open science. I am a PhD candidate at UBC working with Diane Srivastava“
 
 skills:
-- Aesthetics, Ethics, Metaphysics, Nihilism
-- Psychology, Ontology, Poetry, Value theory
-- Voluntarism, Tragedy, Fact–value distinction
-- Anti-foundationalism, Philosophy of history
+- Entomology, Field experiments
+- Statistics, R programming
+- Teaching, including designing and delivering lessons
+- Public speaking
 
-experience:
-- years: 1879--1889
-  employer: Freiberufler
-  job: Freier Philisoph
-  city: Sils-Maria
-- years: 1869–-1879
-  employer: Universität Basel
-  job: Professor für klassische Philologie
-  city: Basel
-- years: 1867--1868
-  employer: Preußischen Artillerie
-  job: Kanonier
-  city: Naumburg
+publications:
+- years: 2012
+  title: Phylogenetic diversity and the functioning of ecosystems
+  authors: Diane S Srivastava, Marc W Cadotte, A Andrew M MacDonald, Robin G Marushia, Nicholas Mirotchnick
+  journal: Ecology Letters
+  volume: 15
+  issue: 7
+  pages: 637-648
 
 education:
-- year: 1867
-  subject: Philology
-  institute: Leipzig Universität
-  city: Leipzig
-- year: 1864
-  subject: Abitur
-  institute: Schulpforta
-  city: Naumburg
+- year: 2006
+  subject: Biology (honours)
+  institute: Cape Breton University
+  city: Sydney
+- year: 2009
+  subject: Botany
+  institute: University of Toronto
+  city: Toronto
 
 # Settings
 mainfont: Hoefler Text
