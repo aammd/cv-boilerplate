@@ -1,105 +1,128 @@
-# CV Boilerplate
+\documentclass[10pt, a4paper]{article}
 
-> I consider LaTeX resumes to be a secret handshake of sorts, something that makes me significantly more likely to be inclined to hire a candidate.  
-> &mdash;<cite>[zackelan](https://news.ycombinator.com/item?id=10452606)<cite> on HN
+% LAYOUT
+%--------------------------------
+% Margins
+\usepackage{geometry} 
+\geometry{a4paper, left=35mm, right=35mm, top=51mm, bottom=17mm}
 
-A boilerplate to ease the pain of building and maintaining a CV or résumé using LaTeX.
+% Do not indent paragraphs
+\setlength\parindent{0in}
 
-## Intro
+% Enable multicolumns
+\usepackage{multicol}
+\setlength{\columnsep}{-3.5cm}
 
-Separating presentation from content makes life easier. The typical content of a CV is a perfect fit for a YAML file due to its structured nature:
+% Uncomment to suppress page numbers
+% \pagenumbering{gobble}
 
-```YAML
----
-name: Friedrich Nietzsche
-address:
-- Humboldtstraße 36
-- 99425 Weimar
-- Prussia
-email: friedrich@thevoid.de
-# ...
-experience:
-- years: 1879--1889
-  employer: Freiberufler
-  job: Freier Philisoph
-  city: Sils-Maria
-- years: 1869–-1879
-  employer: Universität Basel
-  job: Professor für klassische Philologie
-  city: Basel
-```
+% LANGUAGE
+%--------------------------------
+% Set the main language
+\usepackage{polyglossia}
+\setmainlanguage{English}
 
-That makes super easy to update a CV while keeping a consistent structure.
+% TYPOGRAPHY
+%--------------------------------
+\usepackage{fontspec} 
+\usepackage{xunicode}
+\usepackage{xltxtra}
+% converts LaTeX specials (quotes, dashes etc.) to Unicode
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text}
+% Cool ampersand
+\newcommand{\amper}{{\fontspec[Scale=.95]{Hoefler Text}\selectfont\itshape\&}}
 
-Thanks to [pandoc](http://pandoc.org/), we can then access our data from `template.tex` using a special notation. Iterating on repetitive data structures becomes trivial:
+% MARGIN NOTES
+%--------------------------------
+\usepackage{marginnote}
+\newcommand{\note}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
 
-```latex
-$for(experience)$
-  $experience.years$\\
-  \textsc{$experience.employer$}\\
-  \emph{$experience.job$}\\
-  $experience.city$\\[.2cm]
-$endfor$
-```
+% HEADINGS
+%--------------------------------
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\rmfamily\mdseries} 
+\subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
+\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
 
-LaTeX takes then care of the typesetting with its usual elegance. Below a preview of the final result. Check out the [output](output.pdf) to see the compiled PDF.
+% PDF SETUP
+%--------------------------------
+\usepackage{hyperref}
+\hypersetup
+{
+  pdfauthor={A. Andrew M. MacDonald},
+  pdfsubject={A. Andrew M. MacDonald's CV},
+  pdftitle={A. Andrew M. MacDonald's CV},
+  colorlinks, breaklinks, xetex, bookmarks,
+  filecolor=black,
+  urlcolor=[rgb]{0.117,0.682,0.858},
+  linkcolor=[rgb]{0.117,0.682,0.858},
+  linkcolor=[rgb]{0.117,0.682,0.858},
+  citecolor=[rgb]{0.117,0.682,0.858}
+}
 
-![preview](preview.png)
+% DOCUMENT
+%--------------------------------
 
-With this method, you can keep your entire CV encoded in a single YAML file, put it under version control (into a gist, for instance), and generate a PDF on the fly when needed. You can also easily export it to other formats, like HTML for web publishing (I've heard [Jekyll](http://jekyllrb.com/) likes YAML). Convenient, portable and time-proof.
+\begin{document}
 
-## Dependencies
+{\LARGE A. Andrew M. MacDonald}\\[.2cm]
 
-1. LaTeX with the following extra packages: `fontspec` `geometry` `multicol` `xunicode` `xltxtra` `marginnote` `sectsty` `ulem` `hyperref` `polyglossia`
-2. [Pandoc](http://pandoc.org/), the universal document converter.
+\begin{multicols}{2}
 
-To install LaTeX on Mac OS X, I recommend getting the smaller version BasicTeX from [here](https://tug.org/mactex/morepackages.html) and installing the additional packages with `tlmgr` afterwards. Same goes for Linux: install `texlive-base` with your package manager and add the needed additional packages later.
+2404 Guelph Street\\
+Vancouver, British Columbia\\
+Canada\\
 
-To install pandoc on Mac OS X, run `brew install pandoc`. To install it on Linux, refer to the [official docs](http://pandoc.org/installing.html).
+\vspace{-10pt}
 
-## Getting started
++1 778 998 5002\\
+\href{mailto:a.a.m.macdonald@gmail.com}{a.a.m.macdonald@gmail.com}\\
 
-1. Fill `details.yml` with your personal details, work experience, education, and desired settings.
-2. Run `make` to compile the PDF.
-3. Tweak on `template.tex` until you're satisfied with the result.
 
-**Note**: this template needs to be compiled with XeTeX.
+\columnbreak
 
-### Note for Windows users
+\href{http://github.com/aammd}{github.com/aammd}\\
+\href{http://twitter.com/polesasunder}{twitter.com/polesasunder}\\
+\end{multicols}
 
-Although I didn't test it, you can probably use this on Windows, too. Both [Pandoc](http://pandoc.org/installing.html) and LaTeX can be installed on Windows (I recommend [MiKTeX](http://miktex.org/) for that) and you should be able to run makefiles on Windows through [Cygwin](https://www.cygwin.com/). If that's too much hassle, this command should do the trick in Powershell:
+\vspace{30pt}
 
-    pandoc details.yml -o output.pdf --template=template.tex --latex-engine=xelatex
+“I am passionate about community ecology, data analysis, and open
+science. I am a PhD candidate at UBC working with Diane Srivastava“
 
-## Available settings
+\subsection*{Areas of Interest}
+\begin{itemize}
+          \item Entomology, Field experiments
+          \item Statistics, R programming
+          \item Teaching, including designing and delivering lessons
+          \item Public speaking
+    \end{itemize}
 
-- **`mainfont`**: Hoefler Text is the default, but every font installed on your system should work out of the box (thanks, XeTeX!)
-- **`fontsize`**: Possible values here are 10pt, 11pt and 12pt.
-- **`lang`**: Sets the main language through the `polyglossia` package. This is important for proper hyphenation, among other things.
-- **`geometry`**: A string that sets the margins through `geometry`. Read [this](https://www.sharelatex.com/learn/Page_size_and_margins) to learn how this package works.
+% \vfill
 
-## Recommended readings
+\vspace{25pt}
 
-- [Typesetting Automation](http://mrzool.cc/writing/typesetting-automation/), my article about this project with in-depth instructions and some suggestions for an ideal workflow.
-- [Why I do my résumé in LaTeX](http://www.toofishes.net/blog/why-i-do-my-resume-latex/) by Dan McGee
-- [What are the benefits of writing resumes in TeX/LaTeX?](http://tex.stackexchange.com/questions/11955/what-are-the-benefits-of-writing-resumes-in-tex-latex) on TeX Stack Exchange
-- [Typesetting your academic CV in LaTeX](http://nitens.org/taraborelli/cvtex) by Dario Taraborelli
-- [Résumé advices](http://practicaltypography.com/resumes.html) from Butterick's Practical Typography 
+\section*{Publications}
+\noindent
+\note{2012}\textsc{Phylogenetic diversity and the functioning of ecosystems}\\
+\emph{Diane S Srivastava, Marc W Cadotte, A Andrew M MacDonald, Robin G
+Marushia, Nicholas Mirotchnick}\\
+Ecology Letters, 15 (7): 637-648\\[.2cm]
 
-## Resources
+\section*{Education}
+\noindent
+\note{2006}\textbf{Biology (honours)}\\
+\emph{Cape Breton University}, Sydney\\[.2cm]
+\note{2009}\textbf{Botany}\\
+\emph{University of Toronto}, Toronto\\[.2cm]
 
-- Refer to [pandoc's documentation](http://pandoc.org/demo/example9/templates.html) to learn more about how templates work.
-- If you're not familiar with the YAML syntax, [here](http://learnxinyminutes.com/docs/yaml/)'s a good overview.
-- If you want to edit the template but LaTeX scares you, these [docs](https://www.sharelatex.com/learn/Main_Page) put together by ShareLaTeX cover most of the basics and are surprisingly kind to the beginner.
-- Odds are your question already has an answer on [TeX Stack Exchange](https://www.sharelatex.com/learn/Main_Page). Also, pretty friendly crowd in there.
 
-## See also
+\end{document}
 
-- [invoice-boilerplate](https://github.com/mrzool/invoice-boilerplate) — Simple automated LaTeX invoicing system
-- [letter-boilerplate](https://github.com/mrzool/letter-boilerplate) — Typeset your important letters without leaving your text editor
 
-## License
 
-This repository contains a modified version of Dario Taraborelli's [cvtex](https://github.com/dartar/cvtex) template.
-
-License: [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)

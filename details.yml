@@ -14,7 +14,7 @@ urls:
 
 # Sections
 
-intro: “I am passionate about community ecology, data analysis, and open science. I am a PhD candidate at UBC working with Diane Srivastava“
+intro: I am passionate about community ecology, data analysis, and open science. I am a PhD candidate at UBC working with Diane Srivastava
 
 skills:
 - Entomology, Field experiments
@@ -30,6 +30,27 @@ publications:
   volume: 15
   issue: 7
   pages: 637-648
+- years: 2010
+  title: The effects of disturbance and enemy exclusion on performance of an invasive species, common ragweed, in its native range
+  authors: A Andrew M MacDonald, Peter M Kotanen
+  journal: Oecologia
+  volume: 162
+  issue: 4
+  pages: 977-986
+- years: 2010
+  title: Leaf damage has weak effects on growth and fecundity of common ragweed (Ambrosia artemisiifolia)
+  authors: A Andrew M MacDonald, Peter M Kotanen
+  journal: Botany
+  volume: 88
+  issue: 2
+  pages: 158-164
+- years: 2007
+  title: Hyperaspis brunnescens Dobzhansky (Coleoptera Coccinellidae) newly recorded in Canada from Scatarie Island, Nova Scotia
+  authors: C Majka, KR Aikens, AA MacDonald, SM Townsend, DB McCorquodale
+  journal: Entomological News
+  volume: 118
+  issue: 4
+  pages: 402-406
 
 education:
 - year: 2006
