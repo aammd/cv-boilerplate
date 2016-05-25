@@ -54,16 +54,23 @@ publications:
 
 education:
 - year: 2006
-  subject: Biology (honours)
+  subject: B. Sc., Biology (honours)
   institute: Cape Breton University
   city: Sydney
 - year: 2009
-  subject: Botany
+  subject: M. Sc., Botany
   institute: University of Toronto
   city: Toronto
 
 languages:
--   
+- language: English
+  proficiency: Writing, Reading, Speaking 
+- language: French
+  proficiency: Writing, Reading, Speaking
+- language: Portuguese
+  proficiency: Reading, Conversational
+- language: Indonesian
+  proficiency: Reading, Conversational  
 
 # Settings
 mainfont: Hoefler Text

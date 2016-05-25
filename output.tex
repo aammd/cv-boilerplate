@@ -1,0 +1,127 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt, a4paper]{article}
+
+% LAYOUT
+%--------------------------------
+% Margins
+\usepackage{geometry} 
+\geometry{a4paper, left=35mm, right=35mm, top=51mm, bottom=17mm}
+
+% Do not indent paragraphs
+\setlength\parindent{0in}
+
+% Enable multicolumns
+\usepackage{multicol}
+\setlength{\columnsep}{-3.5cm}
+
+% Uncomment to suppress page numbers
+% \pagenumbering{gobble}
+
+% LANGUAGE
+%--------------------------------
+% Set the main language
+\usepackage{polyglossia}
+\setmainlanguage{English}
+
+% TYPOGRAPHY
+%--------------------------------
+\usepackage{fontspec} 
+\usepackage{xunicode}
+\usepackage{xltxtra}
+% converts LaTeX specials (quotes, dashes etc.) to Unicode
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text}
+% Cool ampersand
+\newcommand{\amper}{{\fontspec[Scale=.95]{Hoefler Text}\selectfont\itshape\&}}
+
+% MARGIN NOTES
+%--------------------------------
+\usepackage{marginnote}
+\newcommand{\note}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+%--------------------------------
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\rmfamily\mdseries} 
+\subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
+\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+
+% PDF SETUP
+%--------------------------------
+\usepackage{hyperref}
+\hypersetup
+{
+  pdfauthor={A. Andrew M. MacDonald},
+  pdfsubject={A. Andrew M. MacDonald's CV},
+  pdftitle={A. Andrew M. MacDonald's CV},
+  colorlinks, breaklinks, xetex, bookmarks,
+  filecolor=black,
+  urlcolor=[rgb]{0.117,0.682,0.858},
+  linkcolor=[rgb]{0.117,0.682,0.858},
+  linkcolor=[rgb]{0.117,0.682,0.858},
+  citecolor=[rgb]{0.117,0.682,0.858}
+}
+
+% DOCUMENT
+%--------------------------------
+\begin{document}
+
+{\LARGE A. Andrew M. MacDonald}\\[.2cm]
+
+\begin{multicols}{2}
+
+2404 Guelph Street\\
+Vancouver, British Columbia\\
+Canada\\
+
+\vspace{-10pt}
+
++1 778 998 5002\\
+\href{mailto:a.a.m.macdonald@gmail.com}{a.a.m.macdonald@gmail.com}\\
+
+
+\columnbreak
+
+\href{http://github.com/aammd}{github.com/aammd}\\
+\href{http://twitter.com/polesasunder}{twitter.com/polesasunder}\\
+\end{multicols}
+
+\vspace{30pt}
+
+``I am passionate about community ecology, data analysis, and open
+science. I am a PhD candidate at UBC working with Diane Srivastava``
+
+\subsection*{Areas of Interest}
+\begin{itemize}
+          \item Entomology, Field experiments
+          \item Statistics, R programming
+          \item Teaching, including designing and delivering lessons
+          \item Public speaking
+    \end{itemize}
+
+% \vfill
+
+\vspace{25pt}
+
+\section*{Publications}
+\noindent
+\note{2012}\textsc{Phylogenetic diversity and the functioning of ecosystems}\\
+\emph{Diane S Srivastava, Marc W Cadotte, A Andrew M MacDonald, Robin G
+Marushia, Nicholas Mirotchnick}\\
+Ecology Letters, 15 (7): 637-648\\[.2cm]
+
+\section*{Education}
+\noindent
+\note{2006}\textbf{Biology (honours)}\\
+\emph{Cape Breton University}, Sydney\\[.2cm]
+\note{2009}\textbf{Botany}\\
+\emph{University of Toronto}, Toronto\\[.2cm]
+
+
+\end{document}
