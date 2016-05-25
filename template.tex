@@ -105,26 +105,10 @@ $if(intro)$
 $intro$
 $endif$
 
-\subsection*{Areas of Interest}
-$if(skills)$
-\begin{itemize}
-    $for(skills)$
-      \item $skills$
-    $endfor$
-\end{itemize}
-$endif$
 
 % \vfill
 
 \vspace{25pt}
-
-\section*{Publications}
-\noindent
-$for(publications)$
-\note{$publications.years$}\textsc{$publications.title$}\\
-\emph{$publications.authors$}\\
-$publications.journal$, $publications.volume$ ($publications.issue$): $publications.pages$\\[.2cm]
-$endfor$
 
 $if(education)$
 \section*{Education}
@@ -135,11 +119,28 @@ $for(education)$
 $endfor$
 $endif$
 
+\section*{Publications}
+\noindent
+$for(publications)$
+\note{$publications.year$}\textsc{$publications.title$}\\
+\emph{$publications.authors$}\\
+$publications.journal$, $publications.volume$ ($publications.issue$): $publications.pages$\\[.2cm]
+$endfor$
+
 $if(languages)$
 \section*{Languages}
 $for(languages)$
 \emph{$languages.language$} ($languages.proficiency$)\\
 $endfor$
+$endif$
+
+\subsection*{Skills}
+$if(skills)$
+\begin{itemize}
+    $for(skills)$
+      \item $skills$
+    $endfor$
+\end{itemize}
 $endif$
 
 \end{document}
