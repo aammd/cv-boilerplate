@@ -23,30 +23,37 @@ skills:
 - Public speaking
 
 publications:
+- year: 2014
+  title: Assessing the relative importance of neutral stochasticity in ecological communities  
+  authors: Mark Vellend, Diane S Srivastava, Kathryn M Anderson, Carissa D Brown, Jill E Jankowski, Elizabeth J Kleynhans, Nathan JB Kraft, Alathea D Letaw, \textbf{A Andrew M MacDonald}, Janet E Maclean, Isla H Myers-Smith, Andrea R Norris, Xinxin Xue
+  journal: Oikos
+  volume: 123
+  issue: 12
+  pages: 1420-1430
 - year: 2012
   title: Phylogenetic diversity and the functioning of ecosystems
-  authors: Diane S Srivastava, Marc W Cadotte, A Andrew M MacDonald, Robin G Marushia, Nicholas Mirotchnick
+  authors: Diane S Srivastava, Marc W Cadotte, \textbf{A Andrew M MacDonald}, Robin G Marushia, Nicholas Mirotchnick
   journal: Ecology Letters
   volume: 15
   issue: 7
   pages: 637-648
 - year: 2010
   title: The effects of disturbance and enemy exclusion on performance of an invasive species, common ragweed, in its native range
-  authors: A Andrew M MacDonald, Peter M Kotanen
+  authors: \textbf{A Andrew M MacDonald}, Peter M Kotanen
   journal: Oecologia
   volume: 162
   issue: 4
   pages: 977-986
 - year: 2010
   title: Leaf damage has weak effects on growth and fecundity of common ragweed (Ambrosia artemisiifolia)
-  authors: A Andrew M MacDonald, Peter M Kotanen
+  authors: \textbf{A Andrew M MacDonald}, Peter M Kotanen
   journal: Botany
   volume: 88
   issue: 2
   pages: 158-164
 - year: 2007
   title: Hyperaspis brunnescens Dobzhansky (Coleoptera Coccinellidae) newly recorded in Canada from Scatarie Island, Nova Scotia
-  authors: C Majka, KR Aikens, AA MacDonald, SM Townsend, DB McCorquodale
+  authors: C Majka, KR Aikens, \textbf{AA MacDonald}, SM Townsend, DB McCorquodale
   journal: Entomological News
   volume: 118
   issue: 4
