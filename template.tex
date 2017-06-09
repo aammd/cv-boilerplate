@@ -119,6 +119,16 @@ $for(education)$
 $endfor$
 $endif$
 
+$if(teaching)$
+\section*{Teaching}
+\noindent
+$for(teaching)$
+\note{$teaching.year$}\textbf{$teaching.title$}\\
+\emph{$teaching.institute$}$if(teaching.city)$, $teaching.city$$endif$\\[.2cm]
+$endfor$
+$endif$
+
+
 \section*{Publications}
 \noindent
 $for(publications)$
@@ -134,13 +144,13 @@ $for(languages)$
 $endfor$
 $endif$
 
-\subsection*{Skills}
-$if(skills)$
-\begin{itemize}
-    $for(skills)$
-      \item $skills$
-    $endfor$
-\end{itemize}
-$endif$
+% \subsection*{Skills}
+% $if(skills)$
+% \begin{itemize}
+%     $for(skills)$
+%       \item $skills$
+%     $endfor$
+% \end{itemize}
+% $endif$
 
 \end{document}

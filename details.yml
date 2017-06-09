@@ -1,28 +1,74 @@
 ---
 # Personal details
-name: A. Andrew M. MacDonald
+name: Dr. A. Andrew M. MacDonald
 address:
-- 2404 Guelph Street
-- Vancouver, British Columbia
-- Canada
-phone: "+1 778 998 5002"
+- CESAB Synthesis Centre Postdoc
+- Université Paul Sabatier
+- Toulouse, France
+phone: "+33 6 29 66 46 52"
 email: a.a.m.macdonald@gmail.com
 # Insert URLs without http://
 urls:
+- aammd.info
 - github.com/aammd
 - twitter.com/polesasunder
+- orcid.org/0000-0003-1162-169X
 
 # Sections
 
-intro: I am passionate about community ecology, data analysis, and open science. I am a PhD candidate at UBC working with Diane Srivastava
+intro: I am passionate about community ecology, data analysis, and open science. I am currently a postdoc with the Centre de synthèse et d'analyse sur la biodiversité (CESAB), based in Toulouse, France. My project synthesizes data from multiple scientists, using a large SQL database, reproducible workflows, and custom-made R packages. Our goal is to understand how functional traits of organisms determine how food webs respond to environmental gradients.
 
-skills:
-- Entomology, Field experiments
-- Statistics, R programming
-- Teaching, including designing and delivering lessons
-- Public speaking
+  # skills:
+  # - Statistics
+  # - R programming
+  # - Teaching, including designing and delivering lessons
+  # - Public speaking
+  # - Entomology, Field experiments
+
+teaching:
+- title: BIOL548O "Dealing with Data" (Graduate module)
+  year: 2016 & 2017
+  institute: University of British Columbia
+  city: Vancouver
+- title: STAT545 teaching assistant
+  year: 2014 & 2015
+  institute: University of British Columbia
+  city: Vancouver
+- title: Software Carpentry workshop (x2)
+  year: 2015
+  institute: University of British Columbia
+  city: Vancouver
+- title: Software Carpentry workshop
+  year: 2016
+  institute: Centre National des Recherches Scientifiques
+  city: Paris
+- title: Statistics for biologists
+  year: 2015
+  institute: Universidade Federale do Rio de Janeiro
+  city: Rio de Janeiro
 
 publications:
+- year: 2017
+  title: Environmental control of the microfaunal community structure in tropical bromeliads
+  authors: P Kratina, JS Petermann, NAC Marino, \textbf{AAM MacDonald}, DS Srivastava
+  journal: Ecology and Evolution
+  volume: 7
+  issue: 5
+  pages: 1627-1634
+- year: 2017
+  title: Rainfall and hydrological stability alter the impact of top predators on food web structure and function
+  authors: Nicholas AC Marino, Diane S Srivastava, \textbf{A Andrew M MacDonald}, Juliana S Leal, Alice Campos, Vinicius F Farjalla
+  journal: Global change biology
+  volume: 23
+  issue: 2
+  pages: 673-685
+- year: 2016
+  title: codyn An R package of community dynamics metrics
+  authors: Lauren M Hallett, Sydney K Jones, \textbf{A Andrew M MacDonald}, Matthew B Jones, Dan FB Flynn, Julie Ripplinger, Peter Slaughter, Corinna Gries, Scott L Collins
+  journal: Methods in Ecology and Evolution
+  volume: 7
+  issue: 10
+  pages: 1146-1151
 - year: 2014
   title: Assessing the relative importance of neutral stochasticity in ecological communities  
   authors: Mark Vellend, Diane S Srivastava, Kathryn M Anderson, Carissa D Brown, Jill E Jankowski, Elizabeth J Kleynhans, Nathan JB Kraft, Alathea D Letaw, \textbf{A Andrew M MacDonald}, Janet E Maclean, Isla H Myers-Smith, Andrea R Norris, Xinxin Xue
@@ -60,14 +106,21 @@ publications:
   pages: 402-406
 
 education:
-- year: 2006
-  subject: B. Sc., Biology (honours)
-  institute: Cape Breton University
-  city: Sydney
+- year: 2017
+  subject: Ph.D.
+  degree: Zoology
+  institute: University of British Columbia
+  city: Vancouver
 - year: 2009
-  subject: M. Sc., Botany
+  subject: Botany
+  degree: M. Sc.
   institute: University of Toronto
   city: Toronto
+- year: 2006
+  subject: Biology (honours)
+  degree: B. Sc.
+  institute: Cape Breton University
+  city: Sydney
 
 languages:
 - language: English
