@@ -26,28 +26,36 @@ intro: I am passionate about community ecology, data analysis, and open science.
   # - Entomology, Field experiments
 
 teaching:
-- title: BIOL548O "Dealing with Data" (Graduate module)
+- title: BIOL548O "Dealing with Data", Instructor and course creator (Graduate module)
   year: 2016 & 2017
   institute: University of British Columbia
   city: Vancouver
-- title: STAT545 teaching assistant
+- title: Data wrangling, exploration, and analysis with R (STAT545), Teaching Assistant
   year: 2014 & 2015
   institute: University of British Columbia
   city: Vancouver
-- title: Software Carpentry workshop (x2)
+- title: Software Carpentry workshop (x4) Instructor
+  year: 2015-2017
+  institute: Various
+  city: Vancouver (CA), Paris (FR), Lugano (CH)
+- title: Fundamentals of Ecology (BIOL203), Teaching Assistant
   year: 2015
   institute: University of British Columbia
   city: Vancouver
-- title: Software Carpentry workshop
-  year: 2016
-  institute: Centre National des Recherches Scientifiques
-  city: Paris
+- title: Ecological Methodology (BIOL404), Teaching Assistant
+  year: 2013
+  institute: University of British Columbia
+  city: Vancouver
 - title: Statistics for biologists
-  year: 2015
+  year: 2013
   institute: Universidade Federale do Rio de Janeiro
   city: Rio de Janeiro
 
 publications:
+- year: 2018 (in press)
+  title: Macroecological and macroevolutionary patterns emerge in the universe of GNU/Linux operating systems
+  authors: Petr Keil,  \textbf{A Andrew M MacDonald}, Kelly Ramirez, Joanne Bennettn Gabriel García Peña, Benjamin Yguel, Bérenger Bourgeois, Carsten Meyer
+  journal: Ecography
 - year: 2017
   title: Environmental control of the microfaunal community structure in tropical bromeliads
   authors: P Kratina, JS Petermann, NAC Marino, \textbf{AAM MacDonald}, DS Srivastava
